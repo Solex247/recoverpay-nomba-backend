@@ -4,8 +4,8 @@
   "description": "Standalone webhook receiver for RecoverPay — deployed separately to get a public URL for Nomba",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
