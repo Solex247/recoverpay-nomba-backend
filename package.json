@@ -4,9 +4,9 @@
   "description": "Managed subscriptions engine with intelligent payment recovery, built on Nomba",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "dev": "node api.js && ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "node api.js && tsc",
+    "start": "node api.js && node dist/index.js",
     "migrate": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
     "db:seed": "ts-node prisma/seed.ts",
